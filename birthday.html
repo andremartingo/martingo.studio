@@ -92,12 +92,18 @@
             background-color: var(--store-button-color);
         }
 
+        .faq-question.expanded {
+            border-radius: 8px 8px 0 0;
+        }
+
         .faq-answer {
             display: none;
             padding: 15px;
             color: var(--body-text-color);
             background-color: var(--card-background-color);
             text-align: left;
+            animation: fadeIn 0.3s;
+            border-radius: 0 0 8px 8px;
         }
 
         .layout__wrapper {
@@ -162,17 +168,25 @@
     </style>
 </head>
 <script>
-    function toggleFAQ(answerId, indicator) {
-        const answer = document.getElementById(answerId);
-        const indicatorElement = document.getElementById(indicator);
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+function toggleFAQ(answerId, indicator) {
+    const answer = document.getElementById(answerId);
+    const indicatorElement = document.getElementById(indicator);
+    const questionElement = answer.previousElementSibling;
+    const isVisible = answer.style.display === 'block';
 
-        if (answer.style.display === 'block') {
-            indicatorElement.style.transform = 'rotate(90deg)';
-        } else {
-            indicatorElement.style.transform = 'rotate(0deg)';
-        }
+    document.querySelectorAll('.faq-answer').forEach((faqAnswer) => {
+        faqAnswer.style.display = 'none';
+        faqAnswer.previousElementSibling.querySelector('.indicator').style.transform = 'rotate(0deg)';
+        faqAnswer.previousElementSibling.classList.remove('expanded');
+    });
+
+    if (!isVisible) {
+        answer.style.display = 'block';
+        indicatorElement.style.transform = 'rotate(90deg)';
+        questionElement.classList.add('expanded'); 
+        answer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+}
 </script>
 
 <body>
