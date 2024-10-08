@@ -1,0 +1,327 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg" href="assets/logo.svg" />
+  <title>Martingo Studio</title>
+  <style>
+    :root {
+      --page-background-color: #000;
+      --body-text-color: hsla(0, 0%, 100%, 0.65);
+      --card-background-color: hsla(0, 0%, 100%, 0.05);
+      --heading-text-color: #fff;
+      --sub-heading-text-color: hsla(0, 0%, 100%, 0.5);
+      --store-button-color: hsla(0, 0%, 100%, 0.1);
+      --subdued-text: hsla(0, 0%, 100%, 0.4);
+      --background-color: #000;
+    }
+
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      background: var(--background-color);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .gradient {
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      object-fit: cover
+    }
+
+    .logo {
+      width: 120px;
+      z-index: 1
+    }
+
+    .appstore {
+      width: 120px;
+      z-index: 1;
+      padding: 32px
+    }
+
+    .layout__wrapper {
+      padding: 64px;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      z-index: 1;
+      color: white
+    }
+
+    .layout__wrapper h1 {
+      font-size: 3rem;
+      color: var(--heading-text-color);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1em;
+      background: var(--background-color);
+      color: var(--subdued-text);
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer span,
+    .footer a {
+      color: var(--subdued-text);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-links {
+      display: inline;
+    }
+
+    @media (max-width: 600px) {
+      .footer span {
+        display: block;
+        margin-bottom: 0.5em;
+      }
+
+      .footer-links {
+        display: block;
+        text-align: center;
+      }
+
+      .separator {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <img class="gradient" src="assets/background.png" alt="Background Image" />
+    <img class="gradient" src="assets/gradient.png" alt="Gradient Overlay" />
+
+    <div class="layout__wrapper">
+      <h1>Terms and Conditions</h1>
+      <p>These are the Terms and Conditions of Happy Pixel LDA, registered in the commercial register of the
+        Portugal. Hereinafter referred to as “Happy Pixel”, “we”, or “us”.
+        These conditions govern the legal relationship between Happy Pixel and you (hereinafter “user” or “you”) when
+        you play a Happy Pixel game, use one of the utility, productivity, or lifestyle apps (hereinafter individually
+        the “App” or collectively the “Apps”). Our Apps are downloaded from App Stores such as the Apple App Store,
+        Google Play, Amazon AppStore for Android, or other comparable App Stores (each an “App Store” or collectively
+        the “App Stores”). The applicable terms of use of the App Store from which the App is downloaded apply to the
+        relationship between the App Store and you - these terms do not govern that relationship.</p>
+
+      <h2>1. Eligibility</h2>
+      <p>To use our Apps, you confirm that:</p>
+      <ul>
+        <li>The device you are accessing is your property and that you are authorized to make payments for features
+          offered in the App.</li>
+        <li>You are not located in a country under a US government embargo or designated as a “terrorist-supporting”
+          country and that you are not on any US government prohibited or restricted party list.</li>
+        <li>The information you provide is true and correct and you will update it if necessary.</li>
+        <li>You have not been previously banned or suspended from using any App.</li>
+        <li>You have a valid account with the App Store from which you download the App (the “App Store Account”).</li>
+      </ul>
+      <p>You also agree not to:</p>
+      <ul>
+        <li>Copy, rent, lend, sell, trade, or otherwise exploit the Apps.</li>
+        <li>Use the Apps for illegal activities.</li>
+        <li>Use the Apps to distribute information or materials that are obscene, violent, threatening, defamatory,
+          discriminatory, or offensive in Happy Pixel’s view.</li>
+        <li>Use the Apps to distribute information or materials that infringe or could infringe intellectual property
+          rights, including those of Happy Pixel.</li>
+      </ul>
+
+      <h2>2. Privacy Policy</h2>
+      <p>Our Privacy Policy explains how we use the information collected about you, including personal data. This
+        policy is available on our website and where you download our Apps.</p>
+
+      <h2>3. Special Conditions</h2>
+      <p>The terms of the App Store provider also apply to your use of the Apps and the purchase of paid features. In
+        case of conflicts between these terms and the App Store terms, the App Store terms prevail regarding the use of
+        the App Store. Additionally, special terms may apply depending on how you access the Apps. We or our partners or
+        third parties may occasionally run contests or promotions, which are subject to additional terms (“Special
+        Conditions”). In case of conflicts between these terms and the special conditions, the special conditions
+        prevail.</p>
+
+      <h2>4. License Grant</h2>
+      <p>By agreeing to these terms, we grant you a non-exclusive, non-transferable, non-sublicensable, revocable
+        license to use our Apps for personal, non-commercial purposes. You must not attempt to hack into an App or gain
+        unauthorized access to the software used by the App. Happy Pixel owns all rights, titles, and interests (or has
+        a license to use) including all intellectual property rights in the Apps, including software code, visual
+        displays, graphics, musical compositions, audiovisual effects, and trademarks of the Apps’ titles, and user
+        content under these terms. Using our Apps under a license does not grant you any intellectual property rights in
+        our Apps.</p>
+
+      <h2>5. User Content</h2>
+      <p>All data, texts, graphics, photos, and other materials uploaded or made available by you or other users in the
+        Apps (“User Content”) are the sole responsibility of the person from whom such content originated. Happy Pixel
+        does not guarantee the accuracy, quality, or integrity of User Content provided through the Apps. You agree that
+        Happy Pixel is not liable for User Content, including errors in User Content or losses or damages resulting from
+        the use of User Content.</p>
+      <p>You represent and warrant that the User Content you submit or transmit originates from you and that you own all
+        rights, claims, and interests, including intellectual property rights, in such content, including the right to
+        grant all rights and licenses in these terms without Happy Pixel incurring obligations or liabilities to third
+        parties.</p>
+      <p>You grant Happy Pixel a worldwide, irrevocable, perpetual, non-exclusive, transferable, fully paid-up, and
+        royalty-free license (with the right to sublicense) to use, reproduce, adapt, modify, distribute, license, sell,
+        transfer, publish, publicly perform, transmit, stream, broadcast, and otherwise exploit the User Content you
+        submit and all derivative works. To the extent permitted by applicable law, you hereby waive all moral rights in
+        the User Content. User Content is not confidential and will not be returned to the user.</p>
+      <p>Happy Pixel reserves the right, at its sole discretion, to remove and/or permanently delete User Content from
+        the Apps.</p>
+
+      <h2>6. Errors</h2>
+      <p>Happy Pixel makes reasonable efforts to ensure that there are no errors or inaccuracies in the Apps regarding
+        pricing and your purchase and use of the Apps.</p>
+
+      <h2>7. Paid Features</h2>
+      <p>Some of our Apps offer paid features, which may include subscriptions, products, and other services or virtual
+        items. You can “buy” or “earn” these paid features in our Apps. All terms of these terms and conditions for
+        using the Apps also apply to the use of paid features.</p>
+      <ul>
+        <li><strong>Pricing:</strong> Prices are indicated at the time of purchase and may vary by country. The same
+          paid features may be offered by third parties at different prices. Prices and availability are subject to
+          change without notice.</li>
+        <li><strong>Risk of Loss:</strong> The risk of loss or damage to paid features passes to you upon electronic
+          transmission of the paid feature to you.</li>
+        <li><strong>Subscriptions:</strong> Subscriptions provide access to certain services, software, and content
+          available to subscribers. These subscriptions are tied to your account and are non-transferable.</li>
+        <li><strong>Automatic Renewals and Payments:</strong> If automatic renewal is enabled, your subscription will
+          automatically renew at the end of the current subscription term at the then-current price.</li>
+      </ul>
+
+      <h2>8. Refund</h2>
+      <p>Happy Pixel is entitled to cancel a payment and refund you if we believe a purchase is incomplete or
+        fraudulent. Refunds are processed through the App Store where the original purchase was made.</p>
+
+      <h2>9. Payment Methods</h2>
+      <p>The payment methods accepted by Happy Pixel include those offered by the respective App Store provider at the
+        place of purchase within the App.</p>
+
+      <h2>10. Disclaimer of Warranties and Limitation of Liability</h2>
+      <p>Happy Pixel is liable only for damages caused by intentional or grossly negligent behavior of Happy Pixel, its
+        legal representatives, or agents. For slight negligence, Happy Pixel is liable only for breaches of essential
+        contractual obligations. In such cases, liability is limited to foreseeable damage. Happy Pixel’s liability for
+        damages arising from injury to life, body, or health is not affected.</p>
+
+      <h2>11. Data Loss</h2>
+      <p>Happy Pixel is not liable for data loss if the user has not performed regular data backups, ensuring that lost
+        data can be restored with reasonable effort.</p>
+
+      <h2>12. Disclaimer of Warranty</h2>
+      <p>Happy Pixel provides the Apps and all paid features “as is.” There is no guarantee that access to the Apps will
+        be uninterrupted, reliable, or error-free.</p>
+
+      <h2>13. Third-Party Advertising</h2>
+      <p>Happy Pixel may generate revenue from third-party advertising in the Apps. By using the Apps, you may encounter
+        third-party ads and offers for virtual items from these advertisers.</p>
+
+      <h2>14. Third-Party Links</h2>
+      <p>Links in the Apps may direct you outside of Happy Pixel's Apps to third-party websites. Happy Pixel is not
+        responsible for the content or policies of these third-party websites.</p>
+
+      <h2>15. Termination or Suspension of Your Account</h2>
+      <p>Happy Pixel reserves the right to terminate or suspend your use of the Apps at its sole discretion, especially
+        if you violate these terms.</p>
+
+      <h2>16. Transfer of Rights and Obligations</h2>
+      <p>Happy Pixel may transfer its rights and obligations under these terms to third parties, including through
+        sublicensing or transfer of rights.</p>
+
+      <h2>17. Third-Party Rights</h2>
+      <p>You acknowledge that if the App was downloaded or purchased from an App Store, the respective App Store
+        providers are third-party beneficiaries of these terms.</p>
+
+      <h2>18. Governing Law</h2>
+      <p>These terms are governed by Portugal law. If you reside in the European Union, your statutory consumer rights
+        remain unaffected.</p>
+
+      <h2>19. Amendments</h2>
+      <p>Happy Pixel reserves the right to modify these terms at any time. If changes are made, you will be notified in
+        the Apps or through other communication means.</p>
+
+      <h2>19. Governing Law and Jurisdiction</h2>
+      <p>These terms and conditions are governed by and construed in accordance with Portugal substantive law, unless
+        mandatory consumer laws of another country apply. Any disputes arising out of or in connection with these terms
+        and conditions will be decided by the Portugal courts. However, consumers may also have the right to bring an
+        action before a court at their place of residence.</p>
+
+      <h2>20. Alternative Dispute Resolution</h2>
+      <p>Happy Pixel is neither willing nor obliged to participate in dispute resolution proceedings before a consumer
+        arbitration board.</p>
+
+      <h2>21. Online Dispute Resolution</h2>
+      <p>The European Commission provides a platform for online dispute resolution (ODR), available at <a
+          href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a>. Consumers have the option to
+        use this platform to resolve their disputes. However, Happy Pixel is neither willing nor obliged to participate
+        in
+        such a procedure.</p>
+
+      <h2>22. Severability Clause</h2>
+      <p>Should any provision of these terms and conditions be found wholly or partially illegal, invalid, or
+        unenforceable by a competent court or administrative authority, that provision or part thereof will be
+        considered not part of these terms and conditions. The validity and enforceability of the remaining provisions
+        will remain unaffected.</p>
+
+      <h2>23. Complaints and Disputes</h2>
+      <p>Please contact us immediately using our contact details if you: (a) have any questions, complaints, claims, or
+        concerns regarding content in our Apps, our paid features, or Happy Pixel in general; or (b) believe that an act
+        or omission by Happy Pixel or one of our players violates applicable law. Happy Pixel will review your concerns
+        and
+        decide whether to take action and whether a player has violated these terms. Happy Pixel will endeavor to inform
+        you of the outcome of the review within a reasonable time after receiving your complaint. Both parties
+        acknowledge that the App Store providers have no obligation to investigate, settle, defend, or dismiss disputes
+        concerning the intellectual property of the Apps. The right to object to a defect in the Apps or virtual items
+        expires after three years.</p>
+
+      <h2>24. Amendment of Terms and Conditions</h2>
+      <p>Happy Pixel reserves the right to change or supplement these terms and conditions at any time with effect for
+        the
+        future, as necessary due to changes in the legal or regulatory framework, technical developments, or other
+        comparable reasons. Happy Pixel will inform users of changes to the terms in an appropriate manner in good time.
+        This may be done, for example, by a notification within the App, by email, or by a notice on the website.</p>
+
+      <p>Users have the right to object to the changes within 30 days of receiving the notification. Objections must be
+        made in writing to <a href="mailto:support@martingo.studio">support@martingo.studio</a>. If the user does not
+        object
+        within the period, the changed terms are considered accepted. If the user objects to the changes, Happy Pixel is
+        entitled to terminate the contract with the user at the time the amended terms take effect.</p>
+
+      <h2>25. Entire Agreement</h2>
+      <p>These terms and conditions constitute the entire agreement between us regarding the matters described herein
+        and exclude all other terms and conditions.</p>
+    </div>
+
+    <footer class="footer">
+      <span>Copyright 2024 © Martingo Studio</span>
+      <div class="footer-links">
+        <span class="separator">|</span>
+        <a href="mailto:support@martingo.studio" aria-label="Contact Us">Contact</a> |
+        <a href="privacy.html" aria-label="Privacy Policy">Privacy</a> |
+        <a href="terms.html" aria-label="Terms of Service">Terms</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

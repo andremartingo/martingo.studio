@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="assets/logo.svg" />
+    <title>Martingo Studio</title>
+    <style>
+        :root {
+            --page-background-color: #000;
+            --body-text-color: hsla(0, 0%, 100%, 0.65);
+            --card-background-color: hsla(0, 0%, 100%, 0.05);
+            --heading-text-color: #fff;
+            --sub-heading-text-color: hsla(0, 0%, 100%, 0.5);
+            --store-button-color: hsla(0, 0%, 100%, 0.1);
+            --subdued-text: hsla(0, 0%, 100%, 0.4);
+            --background-color: #000;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+                Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            background: var(--background-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .gradient {
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            object-fit: cover
+        }
+
+        .logo {
+            width: 120px;
+            z-index: 1
+        }
+
+        .appstore {
+            width: 120px;
+            z-index: 1;
+            padding: 32px
+        }
+
+        .layout__wrapper {
+            padding: 64px;
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            z-index: 1;
+            color: white
+        }
+
+        .layout__wrapper h1 {
+            font-size: 3rem;
+            color: var(--heading-text-color);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1em;
+            background: var(--background-color);
+            color: var(--subdued-text);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer span,
+        .footer a {
+            color: var(--subdued-text);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: inline;
+        }
+
+        @media (max-width: 600px) {
+            .footer span {
+                display: block;
+                margin-bottom: 0.5em;
+            }
+
+            .footer-links {
+                display: block;
+                text-align: center;
+            }
+
+            .separator {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img class="gradient" src="assets/background.png" alt="Background Image" />
+        <img class="gradient" src="assets/gradient.png" alt="Gradient Overlay" />
+
+        <div class="layout__wrapper">
+
+            <h1>Privacy Policy of Happy Pixel</h1>
+
+            <h2>1. Introduction</h2>
+            <p>Welcome to Happy Pixel (“HAPPY PIXEL,” “we,” “our,” or “us”). This Privacy Policy explains how we
+                collect, use, disclose, and protect your information when you play our games or use our utilities,
+                productivity, and lifestyle apps. By accessing or using our services, you agree to the terms outlined in
+                this policy.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p>We may collect the following types of information:</p>
+            <ul>
+                <li><strong>Personal Information:</strong> Information that identifies you as an individual, such as
+                    your name, email address, phone number, and payment information.</li>
+                <li><strong>Device Information:</strong> Information about the device you use to access our services,
+                    including hardware model, operating system, unique device identifiers, and mobile network
+                    information.</li>
+                <li><strong>Usage Information:</strong> Information about your use of our services, including game
+                    progress, scores, and interactions with in-game ads and purchases.</li>
+                <li><strong>Location Information:</strong> Information about your location when you access our services,
+                    if you have enabled location services on your device.</li>
+            </ul>
+
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the information we collect to:</p>
+            <ul>
+                <li>Provide, maintain, and improve our games and apps.</li>
+                <li>Process transactions and send related information, such as purchase confirmations and invoices.</li>
+                <li>Communicate with you, including sending updates, security alerts, and support messages.</li>
+                <li>Monitor and analyze trends, usage, and activities related to our services.</li>
+                <li>Personalize your experience by delivering relevant content and advertisements.</li>
+            </ul>
+
+            <h2>4. Information Sharing and Disclosure</h2>
+            <p>We may share your information with:</p>
+            <ul>
+                <li><strong>Service Providers:</strong> Third-party vendors and service providers that perform services
+                    on our behalf, such as payment processing, data analysis, email delivery, hosting services, and
+                    customer service.</li>
+                <li><strong>Legal Compliance:</strong> When required by law or in response to a valid legal process,
+                    including from law enforcement or other government agencies.</li>
+                <li><strong>Business Transfers:</strong> In connection with or during negotiations of any merger, sale
+                    of company assets, financing, or acquisition of all or a portion of our business by another company.
+                </li>
+            </ul>
+
+            <h2>5. Security of Your Information</h2>
+            <p>We implement reasonable security measures to protect your information from unauthorized access, use, or
+                disclosure. However, please note that no method of transmission over the internet or method of
+                electronic storage is completely secure, and we cannot guarantee absolute security.</p>
+
+            <h2>6. Data Retention</h2>
+            <p>We retain your information for as long as necessary to fulfill the purposes outlined in this Privacy
+                Policy unless a longer retention period is required or permitted by law.</p>
+
+            <h2>7. Your Privacy Rights</h2>
+            <p>Depending on your jurisdiction, you may have certain rights regarding your personal information, such as:
+            </p>
+            <ul>
+                <li>Accessing the personal information we hold about you.</li>
+                <li>Requesting the correction or deletion of your personal information.</li>
+                <li>Objecting to the processing of your personal information.</li>
+                <li>Requesting the restriction of processing your personal information.</li>
+                <li>Data portability.</li>
+            </ul>
+            <p>To exercise your rights, please contact us using the contact information provided below.</p>
+
+            <h2>8. Children's Privacy</h2>
+            <p>Our services are not directed to individuals under the age of 13. We do not knowingly collect personal
+                information from children under 13. If we become aware that we have collected personal information from
+                a child under 13, we will take steps to delete such information.</p>
+
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. If we make material changes, we will notify you by
+                email (if you have provided it) or by posting a notice on our services prior to or on the effective date
+                of the changes. Your continued use of our services after the effective date will be subject to the new
+                Privacy Policy.</p>
+
+            <h2>10. Cookie Policy</h2>
+            <p>Our services use cookies and similar technologies to enhance your experience, understand how our services
+                are used, and deliver personalized content and advertisements. Cookies are small data files stored on
+                your device when you visit a website. You can manage your cookie preferences through your browser
+                settings. However, please note that disabling cookies may affect the functionality of our services.</p>
+
+            <h2>11. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p><strong>Happy Pixel</strong><br>
+                Email: <a href="mailto:support@martingo.studio">support@martingo.studio</a></p>
+        </div>
+
+        <footer class="footer">
+            <span>Copyright 2024 © Martingo Studio</span>
+            <div class="footer-links">
+                <span class="separator">|</span>
+                <a href="mailto:support@martingo.studio" aria-label="Contact Us">Contact</a> |
+                <a href="privacy.html" aria-label="Privacy Policy">Privacy</a> |
+                <a href="terms.html" aria-label="Terms of Service">Terms</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
