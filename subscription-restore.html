@@ -1,0 +1,145 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="assets/logo.svg" />
+    <title>Martingo Studio</title>
+    <style>
+        :root {
+            --page-background-color: #000;
+            --body-text-color: hsla(0, 0%, 100%, 0.65);
+            --card-background-color: hsla(0, 0%, 100%, 0.05);
+            --heading-text-color: #fff;
+            --sub-heading-text-color: hsla(0, 0%, 100%, 0.5);
+            --store-button-color: hsla(0, 0%, 100%, 0.1);
+            --subdued-text: hsla(0, 0%, 100%, 0.4);
+            --background-color: #000;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+                Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            background: var(--background-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .gradient {
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            object-fit: cover
+        }
+
+        .logo {
+            width: 120px;
+            z-index: 1
+        }
+
+        .appstore {
+            width: 120px;
+            z-index: 1;
+            padding: 32px
+        }
+
+        .layout__wrapper {
+            padding: 64px;
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1;
+            color: white
+        }
+
+        .layout__wrapper h1 {
+            font-size: 3rem;
+            color: var(--heading-text-color);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1em;
+            background: var(--background-color);
+            color: var(--subdued-text);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer span,
+        .footer a {
+            color: var(--subdued-text);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: inline;
+        }
+
+        .layout__wrapper a {
+            color: #0099ff;
+        }
+
+        @media (max-width: 600px) {
+            .footer span {
+                display: block;
+                margin-bottom: 0.5em;
+            }
+
+            .footer-links {
+                display: block;
+                text-align: center;
+            }
+
+            .separator {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img class="gradient" src="assets/background.png" alt="Background Image" />
+        <img class="gradient" src="assets/gradient.png" alt="Gradient Overlay" />
+
+        <div class="layout__wrapper">
+
+            <h1>Restore your purchases</h1>
+            <h4>Once purchased, you can restore your purchase at any time and on any of your devices. Simply tap the Restore button on the purchase screen of the app.</p>
+            <p>For more information, please visit <a href="https://support.apple.com/en-us/108096" class="link"> this page </a> or contact us.</p>
+        </div>
+
+        <footer class="footer">
+            <span>Copyright 2024 © Martingo Studio</span>
+            <div class="footer-links">
+                <span class="separator">|</span>
+                <a href="mailto:support@martingo.studio" aria-label="Contact Us">Contact</a> |
+                <a href="privacy.html" aria-label="Privacy Policy">Privacy</a> |
+                <a href="terms.html" aria-label="Terms of Service">Terms</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
