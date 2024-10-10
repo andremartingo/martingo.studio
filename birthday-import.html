@@ -1,0 +1,163 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="assets/logo.svg" />
+    <title>Martingo Studio</title>
+    <style>
+        :root {
+            --page-background-color: #000;
+            --body-text-color: hsla(0, 0%, 100%, 0.65);
+            --card-background-color: hsla(0, 0%, 100%, 0.05);
+            --heading-text-color: #fff;
+            --sub-heading-text-color: hsla(0, 0%, 100%, 0.5);
+            --store-button-color: hsla(0, 0%, 100%, 0.1);
+            --subdued-text: hsla(0, 0%, 100%, 0.4);
+            --background-color: #000;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+                Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            background: var(--background-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .gradient {
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+        }
+
+        .logo {
+            width: 340px;
+            z-index: 1;
+            border-radius: 16px;
+        }
+
+        .appstore {
+            width: 120px;
+            z-index: 1;
+            padding: 32px;
+        }
+
+        .layout__wrapper {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            z-index: 1;
+            color: white;
+            text-align: left;
+            padding: 10%;
+            padding-top: 15%;
+        }
+
+
+        .footer {
+            text-align: center;
+            padding: 1em;
+            background: var(--background-color);
+            color: var(--subdued-text);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer span,
+        .footer a {
+            color: var(--subdued-text);
+            text-decoration: none;
+        }
+
+        .content a {
+            color: #0099ff;
+        }
+
+        .indicator {
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+            /* Transition for rotation effect */
+            display: inline-block;
+            /* Ensures proper spacing */
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: inline;
+        }
+
+        @media (max-width: 600px) {
+            .footer span {
+                display: block;
+                margin-bottom: 0.5em;
+            }
+
+            .footer-links {
+                display: block;
+                text-align: center;
+            }
+
+            .separator {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img class="gradient" src="assets/background.png" alt="Background Image" />
+        <img class="gradient" src="assets/gradient.png" alt="Gradient Overlay" />
+
+        <div class="layout__wrapper">
+            <img class="logo" src="assets/birthdayimport.png" alt="">
+
+            <div class="content">
+                <h3>With Widget Studio it is super easy to import birthdays from a CSV file in seconds.</h3>
+                <p>Any CSV table will work as long as it contains a birthday and a name. You can open files directly from your device as shown above.</p>    
+                <h3>Export from Google Contacts</h3>
+                <p>The Google Contacts page offers a way to export your contacts to a CSV file1. Login to Google Contacts2. Select your contacts3. Tap on “Export” and choose “Google CSV”4. Open the file in Widget StudioA more detailed description can be found on this page:</p>    
+                <a class="link" href="https://support.google.com/contacts/answer/7199294" target="_blank" rel="noopener"><strong class="text">Open Google Help</strong></a>
+                <h3>Export from Facebook</h3>
+                <p>Facebook recently removed the ability to download birthdays as a CSV file. Until it is enabled again, there are some other ways to export your birthdays. Widget Studio and its developers is not responsible for other tools and is not liable for any damage they may cause. Possible ways to go:</p>    
+                <a class="link" href="https://chromewebstore.google.com/detail/birthday-calendar-exporte/imielmggcccenhgncmpjlehemlinhjjo" target="_blank" rel="noopener"><strong class="text">Google Chrome Plugin: Birthday Calendar Extractor</strong></a>
+                <h3>Export from other apps</h3>
+                <p>Widget Studio can process files from any other app supporting CSV file export. Just check the options of the required App.</p>    
+                <p>If you have any question, please do not hesitate to contact us. Together we can solve any problem 🙂</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <span>Copyright 2024 © Martingo Studio</span>
+            <div class="footer-links">
+                <span class="separator">|</span>
+                <a href="mailto:support@martingo.studio" aria-label="Contact Us">Contact</a> |
+                <a href="privacy.html" aria-label="Privacy Policy">Privacy</a> |
+                <a href="terms.html" aria-label="Terms of Service">Terms</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
